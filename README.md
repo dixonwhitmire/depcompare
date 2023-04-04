@@ -1,0 +1,2 @@
+# gotemplate
+Go Project Template
