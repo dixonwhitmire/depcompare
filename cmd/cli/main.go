@@ -1,11 +1,18 @@
 // Package main contains the CLI entrypoint for the depcompare utility.
 // depcompare compares a dependency list against a target dependency list.
 // Comparison results display dependencies which exist in both the provided and target list.
-
-// The --type flag is used to specify the dependency type.
-// Supported dependency types include:
-//	- gradleb: gradle build file.
-//	- gradlet: text file containing "gradle" compatible dependencies.
+//
+// Usage:
+// depcompare --type=[gradleb|gradlet] --mode=[intersect|diff] [dep file path] [target dep file path]
+//
+// The --type flag supports the dependency management type, such as Gradle, Maven, PyPi, etc.
+// Valid --type values include:
+//	- gradleb: gradle build file aka "build.gradle"
+//	- gradlet: text file containing "gradle" compatible dependencies in short form. Example: org.apache.commons:commons-collections4:4.4.
+//
+// The --mode flag specifies the type of comparision used.
+// --mode=intersect displays common dependencies in both lists, regardless of version.
+// --mode=diff displays dependencies in the "target" (second) dep file path which are not in the first dep file path.
 
 package main
 
