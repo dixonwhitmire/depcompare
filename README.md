@@ -1,3 +1,3 @@
 # depcompare
 
-Compare dependency lists for projects by viewing dependencies in common, or differences.
+Compare dependency lists for projects and view dependencies in common or dependencies which differ.
