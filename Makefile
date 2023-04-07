@@ -7,13 +7,9 @@ clean:
 .PHONY: target
 
 build:
-	go build -o target/app cmd/cli/main.go
+	go build -o target/depcompare cmd/cli/main.go
 .PHONY: build	
 
 test:
 	go test ./...
 .PHONY: test
-
-run:
-	go run cmd/cli/main.go
-.PHONY: run
