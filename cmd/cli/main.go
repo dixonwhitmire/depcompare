@@ -10,7 +10,7 @@ import (
 )
 
 const usage = `
-depcompare --type=[gradleb|gradlet] [dep path] [base dep path]
+depcompare --type=[gradleb|gradletxt] [dep path] [base dep path]
 `
 
 // printResult prints a single result set/key to stdout
